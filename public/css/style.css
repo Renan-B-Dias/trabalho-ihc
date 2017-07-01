@@ -1,30 +1,26 @@
 .nav-color {
-    background-color: #1887B4
+  background-color: #1887B4
 }
 .img-ajust {
-    width: 100%;
-    height: auto
+  width: 100%;
+  height: auto
 }
 .default-label {
-    color: black;
-    text-align: left
-}
-.overlay-all {
-  position: relative;
-  z-index: 2
+  color: black;
+  text-align: left
 }
 .no-padding {
-    padding-right: 0;
-    padding-left: 0
+  padding-right: 0;
+  padding-left: 0
 }
 .logo-box {
-    width: 60px;
-    height: auto
+  width: 60px;
+  height: auto
 }
 label {
-    font-size: 1.0rem;
+  font-size: 1.0rem;
 }
 .bold {
-    font-weight: bold;
-    color: #616161;
+  font-weight: bold;
+  color: #616161;
 }
