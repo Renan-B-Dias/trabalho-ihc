@@ -1,0 +1,137 @@
+<!--<div class="slider fullscreen">
+  <ul class="slides">
+    <li>
+      <img src="images/img6.jpg">
+    </li>
+    <li>
+      <img src="images/img7.jpg">
+    </li>
+    <li>
+      <img src="images/img8.jpg">
+    </li>
+    <li>
+      <img src="images/img9.jpg">
+    </li>
+  </ul>
+</div>-->
+
+<div class="container overlay-all">
+  </br>
+  <div class="row">
+    <div class="col s12">
+      <img class="responsive-img" src="images/logo2.png" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel">
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="rga" type="text" class="validate">
+            <label for="rga">R.G.A</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="rga" type="password" class="validate">
+            <label for="rga">Senha</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 center-align">
+            <a class="waves-effect waves-light btn light-blue darken-2" ng-click="login()">ACESSAR</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6">
+            <a class='waves-effect waves-teal btn-flat col s11' data-target='forgot-password' modal>Esqueci minha senha</a>
+          </div>
+
+          <div class="col s6">
+            <a class='waves-effect waves-teal btn-flat col s12 center-align' data-target='helpModal' modal>Ajuda</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('.modal').modal();
+    /*$('.slider').slider({
+      indicators: false,
+      transition: 1000,
+      interval: 3000,
+    });*/
+    $("#email-sent").click(function () {
+      Materialize.toast('Email enviado', 4000)
+    });
+  });
+
+</script>
+
+<!-- Help Modal -->
+<div id="helpModal" class="modal">
+  <div class="modal-content">
+    <h5>Ajuda</h5>
+    <p>
+      <b>Aluno de Graduação</b><br> O login é o seu RGA e a senha inicial é o seu CPF, somente números.<br> Para saber seu
+      RGA, acesse o Perfil Socieconômico (http://perfil.ufms.br/), após a confirmação da matrícula, ou procure a secretaria
+      acadêmica do curso.<br>
+
+      <b>Aluno de Pós-graduação</b><br> Para acessar o portal da pós-graduação clique aqui.<br>
+
+      <b>Professor</b><br> Para obter informações sobre acesso ao sistema, por favor, entre em contato com a DIGAD/PROGRAD.<br>
+
+      <b>Dúvidas, Sugestões e Suporte</b><br> Clique aqui para entrar em contato.<br>
+    </p>
+  </div>
+</div>
+
+<!-- Forgot password modal -->
+<div id="forgot-password" class="modal">
+  <div class="modal-content">
+    <h5>Recuperar Senha</h5>
+    <p>
+      O sistema enviará automaticamente, um link para o e-mail cadastrado no sistema. Você deverá clicar no link e abrir a página
+      de redefinição de senha. No formulário aparecerá para você digitar uma nova senha com a qual poderá logar novamente
+      no sistema.
+    </p>
+
+    <div class="row">
+      <h5><span class="red-text">AVISO</span></h5>
+      <ol>
+        <li>
+          <span>O serviço de e-mail da Microsoft (ex. Hotmail) não está recebendo e-mails da UFMS.</span>
+        </li>
+        <li>
+          <span>Caso você não esteja recebendo os emails, verifique sua caixa de SPAM (Lixo Eletrônico).</span>
+        </li>
+        <li>
+          <span>Se o problema persistir, entre em contato pelo telefone 3345-7292.</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email-login" type="text" class="validate">
+        <label for="email-login">E-mail/Login</label>
+      </div>
+      <div class="col s6">
+        <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1 col s12 no-padding">Cancelar</a>
+      </div>
+      <div class="col s6">
+        <a class="modal-action modal-close waves-effect waves-light btn light-blue darken-2 col s12" id="email-sent">Enviar</a>
+      </div>
+    </div>
+  </div>
+</div>
