@@ -24,3 +24,10 @@ label {
   font-weight: bold;
   color: #616161;
 }
+.overlay-all {
+  position: relative;
+  z-index: 2;
+ }
+.opac {
+  opacity: 0.9;
+}
