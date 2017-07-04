@@ -24,6 +24,10 @@ app.config(function ($routeProvider) {
     templateUrl: "views/nota-disciplina.html",
     controller: "controller"
   })
+  .when("/nota-disciplina-2", {
+    templateUrl: "views/nota-disciplina-2.html",
+    controller: "controller"
+  })
   .otherwise ({
     templateUrl: "views/login.html",
     controller: "controller"
